@@ -1,0 +1,13 @@
+html header, body header {
+  background-color: #F0EFE9;
+  padding: 16px;
+}
+html header .container, body header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+html header .menu-bars, body header .menu-bars {
+  font-size: 25px;
+}
