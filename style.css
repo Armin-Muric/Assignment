@@ -220,3 +220,13 @@ header .social-media a:hover {
     display: block;
   }
 }
+
+.partner-logos .images {
+  display: flex;
+  justify-content: center;
+}
+.partner-logos .images img {
+  margin: 55px;
+  padding-top: 45px;
+  padding-bottom: 60px;
+}
