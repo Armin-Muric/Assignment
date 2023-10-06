@@ -299,131 +299,292 @@ header .social-media a:hover {
   font-weight: 300;
   font-size: 16px;
 }
-.container-aboutcompany {
+
+.about-company {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.about-company .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  margin-top: 100px;
+  padding-left: 0px;
 }
-.container-aboutcompany .about-company {
-  grid-column: 2;
+.about-company .container .about-image {
+  display: flex;
+  padding-left: 100px;
+  position: relative;
 }
-.container-aboutcompany .about-company h5 {
-  margin-bottom: 10px;
-  color: #F94D1C;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+.about-company .container .about-image .founder-picture {
+  width: 530px;
+  height: 615px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.container-aboutcompany .about-company h2 {
+.about-company .container .about-image .image-text {
+  background-color: #BEEBFF;
+  position: absolute;
+  width: 368px;
+  height: 180px;
+  bottom: 40px;
+  margin-left: -56px;
+}
+.about-company .container .about-image .image-text h3 {
+  padding-left: 24px;
+  padding-top: 30px;
   color: #191919;
+  font-size: 20px;
+  font-weight: 800;
   font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 45px;
 }
-.container-aboutcompany .about-company p {
-  margin-top: 30px;
-  color: #191919;
+.about-company .container .about-image .image-text h3 span {
+  color: #F94D1C;
+}
+.about-company .container .about-image .image-text p {
+  padding-left: 24px;
+  padding-top: 20px;
   font-family: "Inter", sans-serif;
-  font-weight: 300;
+  color: #191919;
   font-size: 16px;
 }
-.container-aboutcompany .btn-black {
-  margin-right: 30px;
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: #f1f1f1;
-  text-decoration: none;
-  padding: 15px 30px;
-  font-weight: 600;
+.about-company .container .about-text {
+  display: flex;
+  margin-right: 20px;
+  margin-left: 120px;
+  margin-right: 0px;
+}
+.about-company .container .about-text h3 {
+  color: RGBA(25, 25, 25, 0.7);
   font-size: 16px;
-  border-radius: 25px;
+  font-family: "Inter", sans-serif;
+  padding-top: 37px;
+  line-height: 2;
 }
-.container-aboutcompany .btn-black i {
-  margin-left: 8px;
-  font-size: 0.9em;
+.about-company .container .about-text .about-buttons {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
 }
-.container-aboutcompany .btn-black:hover {
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: #F0EFE9;
+.about-company .container .about-text .about-buttons .btn-play {
+  display: flex;
+  border: none;
+  color: #191919;
+  padding-left: 20px;
+  align-items: center;
 }
-.container-aboutcompany .founder {
-  margin-top: 110px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px;
-  align-items: end;
+.about-company .container .about-text .about-buttons .btn-play a {
+  font-size: 35px;
+  padding-left: 20px;
+  text-justify: center;
+  color: #191919;
 }
-.container-aboutcompany .founder img {
-  grid-column: 2;
-  grid-row: 1;
+.about-company .container .about-text .about-buttons .btn-play p {
+  color: #191919;
+  padding-left: 15px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
 }
 
-.our-services {
+.our-service {
   background-color: #F0EFE9;
-  margin-top: 80px;
+  position: relative;
 }
-.our-services .container-services .top-part h5 {
-  color: #F94D1C;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+.our-service .background-lines-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.our-service .container {
+  padding-bottom: 110px;
+}
+.our-service .section-title {
+  display: block;
+  padding-left: 80px;
+  padding-right: 600px;
+  padding-bottom: 45px;
+}
+.our-service .services {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 30px;
+  padding-left: 80px;
+}
+.our-service .services .service-content {
+  display: block;
+  margin-bottom: 45px;
+  background-color: #ffffff;
+  position: relative;
+}
+.our-service .services .service-content .box {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border-top: 2px solid #191919;
+  left: 30px;
+  top: 45px;
+}
+.our-service .services .service-content .content-text {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 80px;
+  margin-bottom: 90px;
+  position: relative;
+}
+.our-service .services .service-content .content-text h3 {
+  color: #191919;
   font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
 }
-.our-services .container-services .top-part h2 {
+.our-service .services .service-content .content-text p {
+  color: RGBA(25, 25, 25, 0.7);
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.our-service .services .service-content .content-text a {
+  font-size: 15px;
+  background-color: #191919;
+  padding: 10px 13px;
+  border-radius: 50px;
+  color: #ffffff;
+  position: absolute;
+  right: 30px;
+}
+.our-service .services .service-content:hover {
+  background-color: #F9D783;
+}
+.our-service .services .service-content:hover a {
+  background-color: #Ffffff;
+  color: #191919;
+}
+
+.why-choose-us {
+  width: 1600px;
+  padding-top: 60px;
+}
+.why-choose-us .container {
+  display: grid;
+  grid-template-columns: 550px 1090px;
+  position: relative;
+  height: 630px;
+  padding: 0px;
+}
+.why-choose-us .container .text {
+  padding-bottom: 10px;
+}
+.why-choose-us .container .text .section-title {
+  padding-top: 30px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+.why-choose-us .container .text .reasones-iteam {
+  display: grid;
+  grid-row: 4;
+}
+.why-choose-us .container .text .reasones-iteam .list {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-top: 25px;
+}
+.why-choose-us .container .text .reasones-iteam img {
+  display: flex;
+}
+.why-choose-us .container .text .reasones-iteam i {
+  font-size: 30px;
+  padding: 10px;
+  border: 1px solid #DADAD3;
+  border-radius: 50px;
+  padding: 13px;
+}
+.why-choose-us .container .text .reasones-iteam .list-text {
+  display: block;
+  padding-left: 10px;
+}
+.why-choose-us .container .text .reasones-iteam .list-text a {
+  text-decoration: none;
+}
+.why-choose-us .container .text .reasones-iteam .list-text a:hover {
+  text-decoration: underline;
+  color: #191919;
+}
+.why-choose-us .container .text .reasones-iteam .list-text h3 {
+  color: #191919;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+}
+.why-choose-us .container .text .reasones-iteam .list-text p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #191919;
+}
+.why-choose-us .container .background {
+  width: 1060px;
+  height: 425px;
+  background-color: #F0EFE9;
+  position: absolute;
+  bottom: 0;
+}
+.why-choose-us .container img {
+  position: absolute;
+  width: 635px;
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+.project-and-case-section .container .section-title {
+  text-align: center;
+}
+.project-and-case-section .container .project-and-cases {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .project-and-case-section .container .project-and-cases {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.project-and-case-section .container .project-and-cases article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.project-and-case-section .container .project-and-cases article img {
+  width: 645px;
+  height: 311px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project-and-case-section .container .project-and-cases article h3 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 45px;
-}
-.our-services .container-services .four-boxes h4 {
-  color: #191919;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
   font-size: 22px;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DADAD3;
 }
-.our-services .container-services .four-boxes p {
-  color: #191919;
+.project-and-case-section .container .project-and-cases article a {
+  display: block;
+  text-align: right;
   font-family: "Inter", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-}
-.our-services .container-services .four-boxes a {
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: #f1f1f1;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
-  padding: 15px 15px;
-  font-weight: 600;
-  font-size: 16px;
-  border-radius: 25px;
-}
-.our-services .container-services .four-boxes a i {
-  margin-left: 8px;
-  font-size: 0.9em;
-}
-.our-services .container-services .four-boxes a:hover {
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: #F0EFE9;
-}
-.our-services .container-services .four-boxes .btn-browse {
-  font-family: "Inter", sans-serif;
-  background-color: transparent;
-  border: 1px solid #191919;
   color: #191919;
-  text-decoration: none;
-  padding: 15px 30px;
-  font-weight: 600;
-  font-size: 16px;
-  border-radius: 25px;
+  padding: 15px;
 }
-.our-services .container-services .four-boxes .btn-browse i {
-  margin-left: 8px;
-  font-size: 0.9em;
+.project-and-case-section .container .project-and-cases article a i {
+  margin-left: 5px;
 }
-.our-services .container-services .four-boxes .btn-browse:hover {
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: #F0EFE9;
+.project-and-case-section .container .project-and-cases article:hover {
+  text-decoration: underline;
+}
+.project-and-case-section .container .center-content {
+  margin-top: 50px;
+  margin-bottom: 90px;
 }
