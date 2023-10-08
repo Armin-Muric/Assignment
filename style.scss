@@ -5,6 +5,10 @@ html, body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    width: 1920px;
 }
 
 .btn-transparent {
@@ -68,7 +72,7 @@ header {
         background-color: transparent;
 
         @media (min-width: 992px) {
-            display: block;
+            display: none;
         }
     }
 
@@ -451,7 +455,7 @@ header {
     .container {
         padding-bottom: 110px;  
     }
-    .section-title {
+    .title {
         display: block;
         padding-left: 80px;
         padding-right: 600px;
@@ -537,13 +541,13 @@ header {
         .text {
             padding-bottom: 10px;
 
-            .section-title {
+            .title {
                 padding-top: 30px;
                 padding-right: 100px;
                 padding-bottom: 20px;
             }
     
-            .reasones-iteam {
+            .items {
                 display: grid;
                 grid-row: 4;
                 
@@ -615,7 +619,7 @@ header {
 .project-and-case-section {
     .container {
 
-        .section-title {
+        .title {
             text-align: center;
         }
 
@@ -678,5 +682,432 @@ header {
     }
 
 }
+
+.meet-our-team {
+    background-color: RGBA(240,208,130,0.93);
+    padding-bottom: 110px;
+
+    .container {
+        
+        .meet-team {
+            display: flex;
+            align-items: flex-end; 
+            justify-content: space-between;
+
+            .title {
+                padding-bottom: 0px;
+            }
+                   
+            h2 {
+                font-size: 45px;
+            }
+
+            .meet-team-btn {
+                display: flex;
+    
+                .btn-yellow {
+                    border: 1px solid #191919;
+                    padding: 12px 30px;
+                }    
+                }             
+           }
+        .team-members {
+            display: flex;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            justify-content: space-between;
+            gap:30px;
+            
+            img {
+                width: 308px;
+                height: 420px;
+                object-fit: cover;
+            }
+
+            .members-name {
+                padding-top: 25px;
+                h3 {
+                    color:#191919;
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 600; 
+                }
+                p {
+                    padding-top: 20px;
+                    font-family: 'Inter', sans-serif;
+                    color: #191919;
+                    font-size: 16px;
+                    padding-top: 10px;
+                }
+
+            }          
+        } 
+        .slider {
+            display: flex;
+            justify-content: center; 
+             a {
+                display: flex;
+                background-color: #DADAD3;
+                border-radius: 50%;
+                margin: 10px;
+                justify-content: center;
+                align-items: center;
+                height: 12px;
+                width: 12px;
+                text-decoration: none;
+    
+                &:hover {
+                    cursor: pointer;
+                    background-color: #191919;
+                } 
+    
+                }           
+        }
+    }
+    .testimonial {
+        height: 887px;
+        width: 1520px;
+        margin-left: 200px;
+        background-color: #ffffff;
+
+        .section-title {
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .contents {
+            display: grid;
+            grid-template-columns: repeat(3, 420px);
+            column-gap: 30px;
+            justify-content: center;
+
+            .content-box {
+                margin-top: 45px;
+                padding: 35px;
+                padding-top: 0px;
+
+                i {
+                    color: #F94D1C;
+                    font-size: 15px;
+                    padding: 4px;
+                    margin-bottom: 25px; }
+
+                h3 {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 18px;
+                    line-height: 34px;
+                    margin-bottom: 35px;
+                }
+                
+                .clients {
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+    
+                    img {
+                        display: flex;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50px;
+                        object-fit: cover; 
+                                      
+                    }
+        
+                    .clients-info {
+                        align-items: center; 
+                        padding-left: 15px; 
+        
+                        p {
+                            color: #F94D1C;
+                            font-family: 'Inter', sans-serif;
+                            font-size: 15px;
+                            font-weight: 600; 
+                            margin-bottom: 8px;
+                        }
+                        h2{
+                            color:#191919;
+                            font-family: 'DM Sans', sans-serif;
+                            font-size: 22px;
+                            font-weight: 700; 
+                        }
+        
+                    }
+    
+                }
+        
+            }
+
+        }
+        
+        .center-content {
+            margin-top: 70px;
+
+        }
+    }
+
+}
+
+.article-and-news {
+    .all-news-title {
+        padding-top: 130px;
+        padding-bottom: 35px;
+        padding-left: 300px;
+        color:#191919;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 45px;
+        font-weight: 700; 
+        
+    }
+    
+    .container {
+        padding-bottom: 70px;
+        .news-title  {
+            display: flex;
+            align-items: flex-end; 
+            justify-content: space-between;
+
+            .section-title {
+                padding-bottom: 0px;
+            }
+            .articles-btn {
+                display: flex;
+                align-items: center;           
+             }
+        }
+     
+    .all-news{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        margin-top: 35px;
+
+
+        .image-with-date {
+            position: relative;
+            img {
+                width: 420px;
+                height: 230px;
+                object-fit: cover; 
+                padding-bottom: 20px;               
+            }
+            .date {
+                position: absolute;
+                top: 15px;
+                left: 16px;
+                width: 56px;
+                height: 65px; 
+                background-color: #F9D783; 
+                text-align: center;
+                align-items: center;
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    color: #6a6c71;
+                    
+        
+                }
+        
+                h3 {
+                    color:#191919;
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700; 
+                    margin-top: 10px;
+                    margin-bottom: 0px;
+                }
+               
+            }
+            
+        }
+
+        .news-text {
+            p {
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                padding-bottom: 15px;
+                color: #6a6c71;
+    
+            }
+    
+            h3 {
+                color:#191919;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 24px;
+                line-height: 33px;
+                font-weight: 700; 
+                padding-bottom: 20px;
+                margin-right: 80px;
+            }
+
+        }
+        
+
+    }  
+     
+        
+    }
+    .all-slider {
+        display: flex;
+        justify-content: center; 
+         a {
+            display: flex;
+            background-color: #DADAD3;
+            border-radius: 50%;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+            height: 12px;
+            width: 12px;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                color: #191919;
+            } 
+
+            }           
+    }
+
+}
+
+.newsletter {
+    position: relative;
+    background-color: #F0EFE9;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .background-wavy-lines {
+        position: absolute;
+        bottom: 40px;
+        right: 0;;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 45px;
+            font-weight: 700;
+        }
+        form {
+            input {
+                padding: 30 10px;
+                border-radius: 25px;
+                outline: none;
+                border: 1px solid rgba(59, 59, 59, 0.1);
+                margin-right: 20px;
+                color: #191919;
+                text-decoration: none;
+                padding: 15px 30px;
+                font-size: 15px;
+            }
+            button {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #0E1021;
+    height: 461px;
+    position: relative;
+    padding-bottom: 80px;
+ 
+   
+    .background-lines-right {
+         position: absolute;
+         bottom: 0;
+         right: 0;;
+         display: block
+ 
+ }
+ 
+         .container {
+             display: flex; 
+             
+             .all-content {
+                 display: flex;
+                 height: 433px;
+ 
+ 
+                 .crito-logo {
+                     padding-top: 114px;
+                     display: block;
+                     width: 311px;
+                     margin-right: 105px;
+ 
+                     p{
+                         font-family: 'Inter', sans-serif;
+                         font-size: 16px;
+                         color: RGBA(255,255,255,0.7);
+                         padding-top: 29px;
+                     }      
+                 }
+                 .content-text {
+                     padding-top: 132px;
+                     margin-left: 65px;
+                     align-items: left;
+ 
+                     h3 {
+                         color: #ffffff;
+                         font-family: 'DM Sans', sans-serif;
+                         font-size: 22px;
+                         font-weight: 700;
+                         padding-bottom: 42px;
+ 
+                     }
+ 
+                     .links {
+                         font-family: 'Inter', sans-serif;
+                         font-size: 15px;
+                         color: RGBA(255,255,255,0.7);
+                         width: 156px;
+                         font-weight: 500;
+                         line-height: 30px;                       
+                     }                   
+                 }
+                 
+             }        
+         }  
+         .copyright-section {
+             height: 52px;       
+             border-top: 1.5px solid RGBA(255,255,255,0.2);
+ 
+             .container {
+                 display: flex;
+                 align-items: flex-end; 
+                 justify-content: space-between;
+                 padding-top: 30px;
+ 
+             }
+  
+             p{
+                 font-family: 'Inter', sans-serif;
+                 font-size: 16px;
+                 color: RGBA(255,255,255,0.7);   
+             }
+             .social-media {
+                 display: none;
+                 padding-bottom: 10px;
+                 
+             
+                 @media (min-width:990px) {
+                     display: block;
+                     }        
+                     a {
+                     color: #ffffff;
+                     margin-right: 15px;
+                     font-size: 15px;
+                     
+                 }
+             }
+     }           
+ }
     
 
